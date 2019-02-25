@@ -2,5 +2,5 @@
   "name": "Micro Learning Extension",
   "version": "0.0",
   "description": "A Google Chrome extension that will help you learn about new topics on the fly!",
-  "manifest_version": 1
+  "manifest_version": 2
 }
