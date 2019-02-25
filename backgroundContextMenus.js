@@ -12,5 +12,17 @@ chrome.runtime.onInstalled.addListener(function() {
       "title": item,
       "contexts": ["all"]
     });   
-  });   
+  });
+  
+  chrome.contextMenus.create({
+    "id": "Google it",
+    "title": "Google \'%s\'",
+    "contexts": ["selection"],
+    "onclick": googleIt
+  });
 });
+
+function googleIt(e) {
+  var newURL = "http://www.google.com/search?q=" + e.selectionText;
+  chrome.tabs.create({ url: newURL });
+}
