@@ -1,6 +1,6 @@
 {
   "name": "Micro Learning Extension",
-  "version": "0.0",
+  "version": "1.0",
   "description": "A Google Chrome extension that will help you learn about new topics on the fly!",
   "background": {
     "scripts": ["backgroundContextMenus.js"],
@@ -9,7 +9,19 @@
   "permissions": ["contextMenus"],
 
   "page_action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/get_started16.png",
+      "32": "images/get_started32.png",
+      "48": "images/get_started48.png",
+      "128": "images/get_started128.png"
+    }
+  },
+  "icons": {
+    "16": "images/get_started16.png",
+    "32": "images/get_started32.png",
+    "48": "images/get_started48.png",
+    "128": "images/get_started128.png"
   },
   "manifest_version": 2
 }
