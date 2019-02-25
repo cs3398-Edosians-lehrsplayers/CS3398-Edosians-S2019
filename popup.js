@@ -1,8 +1,11 @@
-<!DOCTYPE html>
-<html>
+// Copyright 2018 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
 
-   <body>
-      <button id="changeColor"></button>
-      <script src="popup.js"></script>
-   </body>
-</html>
+'use strict';
+
+let changeColor = document.getElementById('changeColor');
+chrome.storage.sync.get('color', function(data) {
+  changeColor.style.backgroundColor = data.color;
+  changeColor.setAttribute('value', data.color);
+});
