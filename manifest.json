@@ -6,7 +6,7 @@
     "scripts": ["backgroundContextMenus.js"],
     "persistent": true
   },
-  "permissions": ["declarativeContent", "contextMenus"],
+  "permissions": ["activeTab","declarativeContent", "contextMenus"],
 
   "page_action": {
     "default_popup": "popup.html",
