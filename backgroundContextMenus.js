@@ -1,7 +1,8 @@
 var CONTEXT_MENU_ITEMS = [
     'Test Item 1',
     'Another Item',
-    'WE IN BUSINESS, BOIS'
+    'WE IN BUSINESS, BOIS',
+    'HIDEEHO'
 ];
 
 
