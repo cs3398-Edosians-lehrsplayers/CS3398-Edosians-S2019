@@ -1,23 +1,7 @@
-var file = new File(["str"], "/Users/Spencer/Documents/GitHub/CS3398-Edosians-S2019/Facts.txt")
-//var file = new File(txtFile);
-
-file.open("r");
-var str;
-var i = 0;
-while (!file.eof) {
-      str.push(file.readln() + "\n");
-}
-file.close();
-
-var min = 0;
-var max = 600;
-var random = Math.floor(Math.random() * (+max - +min)) + +min;
-
 var CONTEXT_MENU_ITEMS = [
     'Test Item 1',
     'Another Item',
     'WE IN BUSINESS, BOIS',
-    str[random]
 ];
 
 
