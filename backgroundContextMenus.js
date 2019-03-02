@@ -1,5 +1,5 @@
-var txtFile = "/Users/Spencer/Documents/GitHub/CS3398-Edosians-S2019/Facts.txt"
-var file = new File(txtFile);
+var file = new File("/Users/Spencer/Documents/GitHub/CS3398-Edosians-S2019/Facts.txt")
+//var file = new File(txtFile);
 
 file.open("r");
 var str;
