@@ -1,7 +1,12 @@
+var str = ["spencer", "john", "jaysen"];
+
+var i = Math.floor(Math.random() * 3);
+
 var CONTEXT_MENU_ITEMS = [
     'Test Item 1',
     'Another Item',
     'WE IN BUSINESS, BOIS',
+    str[i]
 ];
 
 
