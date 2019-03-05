@@ -6,7 +6,7 @@
     "scripts": ["backgroundContextMenus.js"],
     "persistent": true
   },
-  "permissions": ["activeTab","declarativeContent", "contextMenus"],
+  "permissions": ["activeTab","declarativeContent", "contextMenus", "storage"],
 
   "page_action": {
     "default_popup": "popup.html",
@@ -23,5 +23,8 @@
     "48": "images/get_started48.png",
     "128": "images/get_started128.png"
   },
+
+  "options_page": "options.html",
+
   "manifest_version": 2
 }
