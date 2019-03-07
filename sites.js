@@ -1,3 +1,6 @@
+//Rand code from stackoverflow babyyyyy
+
+
 <a href="javascript:openSite()">Click to go to a random site</a>
 <script>
 var links = ["google.com",
@@ -6,11 +9,8 @@ var links = ["google.com",
              "apple.com"]
 
 var openSite = function() {
-    // get a random number between 0 and the number of links
     var randIdx = Math.random() * links.length;
-    // round it, so it can be used as array index
     randIdx = parseInt(randIdx, 10);
-    // construct the link to be opened
     var link = 'http://' + links[randIdx];
     
     var win = window.open(link, '_blank');
