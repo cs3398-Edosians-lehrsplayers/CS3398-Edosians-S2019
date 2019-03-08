@@ -69,7 +69,7 @@ chrome.runtime.onInstalled.addListener(function() {
     "title": "Google \'%s\'",
     "contexts": ["selection"],
     "onclick": googleIt
-HEAD
+
 	});
 
 	chrome.contextMenus.create({
@@ -88,7 +88,7 @@ HEAD
      "contexts": ["selection"],
      "onclick": checkForKanji
   });
-e3d807074e8660b804aae846d531ef6e27e6b35c
+
   // This will alow the browser to show a full-color page icon in the browser
   // toolbar when users navigate to a URL containing "developer.chrome.com". 
   // When the icon is full-color, users can click it to view popup.html
@@ -108,14 +108,12 @@ e3d807074e8660b804aae846d531ef6e27e6b35c
     console.log("The color is green.");
   });
 
-});
 
 function googleIt(e) {
   var newURL = "http://www.google.com/search?q=" + e.selectionText;
   chrome.tabs.create({ url: newURL });
 }
 
-HEAD
 var openSite = function () {
 	var randIdx = Math.random() * links.length;
 	randIdx = parseInt(randIdx, 10);
@@ -146,4 +144,3 @@ function checkForKanji(e) {
         }
     }
 }
-e3d807074e8660b804aae846d531ef6e27e6b35c
