@@ -3,7 +3,7 @@
   "version": "1.0",
   "description": "A Google Chrome extension that will help you learn about new topics on the fly!",
   "background": {
-    "scripts": ["backgroundContextMenus.js"],
+    "scripts": ["util/jquery-3.3.1.min.js", "backgroundContextMenus.js"],
     "persistent": true
   },
   "permissions": ["activeTab","declarativeContent", "contextMenus", "storage"],
@@ -25,6 +25,7 @@
   },
 
   "options_page": "options.html",
+
 
   "manifest_version": 2
 }
