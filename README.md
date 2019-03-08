@@ -1,4 +1,4 @@
-# Google Chrome Learning Extension
+# Google Chrome Learning Extension ![Brain!](/images/ml_brain128.png)
 
 
 Welcome to the Google Chrome Learning Extension! The goal of this project is to provide google chrome users with a convenient extension that allows them to learn more about the topics that matter to them. Using the user's data, the extension will make reccomendations for sites and articles that the user may find interesting. Our goal is to save you time, and help you learn!
