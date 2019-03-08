@@ -680,7 +680,9 @@ chrome.runtime.onInstalled.addListener(function() {
 		"contexts": ["all"],
 		"onclick": openSite
 	});
-  
+
+
+  });
   
   chrome.contextMenus.create({
      "id": "isKanji",
