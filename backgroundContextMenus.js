@@ -691,13 +691,7 @@ chrome.runtime.onInstalled.addListener(function() {
      "onclick": checkForKanji
   });
 
-  chrome.contextMenus.create({
-    "id": "Random Fact",
-    "title": parseInt(Math.random() * facts.length, 10),
-    "contents": ["all"],
-    "onclick": googleIt
-
-  });
+  
 
   // This will alow the browser to show a full-color page icon in the browser
   // toolbar when users navigate to a URL containing "developer.chrome.com". 
