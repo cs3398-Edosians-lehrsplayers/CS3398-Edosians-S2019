@@ -685,7 +685,7 @@ chrome.runtime.onInstalled.addListener(function() {
   chrome.contextMenus.create({
     "id": "Random Fact",
     "title": parseInt(Math.random() * facts.length, 10),
-    "contents": ["all"],
+    "contexts": ["all"],
     "onclick": googleIt
 
   });
