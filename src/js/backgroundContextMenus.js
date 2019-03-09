@@ -683,7 +683,7 @@ chrome.runtime.onInstalled.addListener(function() {
 	});
 
   chrome.contextMenus.create({
-    "id": "Random Fact",
+    "id": "Random Facts",
     "title": parseInt(Math.random() * facts.length, 10),
     "contexts": ["all"],
     "onclick": googleIt
@@ -693,7 +693,7 @@ chrome.runtime.onInstalled.addListener(function() {
   });
   
   chrome.contextMenus.create({
-     "id": "isKanji",
+     "id": "isKanji", 
      "title": "Check for kanji",
      "contexts": ["selection"],
      "onclick": checkForKanji

@@ -3,7 +3,7 @@
   "version": "1.0",
   "description": "A Google Chrome extension that will help you learn about new topics on the fly!",
   "background": {
-    "scripts": ["util/jquery-3.3.1.min.js", "backgroundContextMenus.js"],
+    "scripts": ["util/jquery-3.3.1.min.js", "src/js/backgroundContextMenus.js"],
     "persistent": true
   },
   "permissions": ["activeTab","declarativeContent", "contextMenus", "storage"],
@@ -12,18 +12,18 @@
     "name": "Micro Learning Extension",
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "images/ml_brain16.png",
-      "32": "images/ml_brain32.png",
-      "48": "images/ml_brain64.png",
-      "128": "images/ml_brain128.png"
+      "16": "src/images/ml_brain16.png",
+      "32": "src/images/ml_brain32.png",
+      "48": "src/images/ml_brain64.png",
+      "128": "src/images/ml_brain128.png"
     }
 },
 
   "icons": {
-    "16": "images/ml_brain16.png",
-    "32": "images/ml_brain32.png",
-    "48": "images/ml_brain64.png",
-    "128": "images/ml_brain128.png"
+    "16": "src/images/ml_brain16.png",
+    "32": "src/images/ml_brain32.png",
+    "48": "src/images/ml_brain64.png",
+    "128": "src/images/ml_brain128.png"
   },
 
   "options_page": "options.html",
