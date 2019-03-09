@@ -8,7 +8,8 @@
   },
   "permissions": ["activeTab","declarativeContent", "contextMenus", "storage"],
 
-  "page_action": {
+  "browser_action": {
+    "name": "Micro Learning Extension",
     "default_popup": "popup.html",
     "default_icon": {
       "16": "images/ml_brain16.png",
@@ -16,7 +17,8 @@
       "48": "images/ml_brain64.png",
       "128": "images/ml_brain128.png"
     }
-  },
+},
+
   "icons": {
     "16": "images/ml_brain16.png",
     "32": "images/ml_brain32.png",

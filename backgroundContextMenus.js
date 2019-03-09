@@ -700,21 +700,6 @@ chrome.runtime.onInstalled.addListener(function() {
   });
 
 
-
-  // This will alow the browser to show a full-color page icon in the browser
-  // toolbar when users navigate to a URL containing "developer.chrome.com". 
-  // When the icon is full-color, users can click it to view popup.html
-  chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
-    chrome.declarativeContent.onPageChanged.addRules([{
-      conditions: [
-        new chrome.declarativeContent.PageStateMatcher({
-        pageUrl: {hostEquals: 'developer.chrome.com'},
-      })
-      ],
-          actions: [new chrome.declarativeContent.ShowPageAction()]
-    }]);
-  });
-
   // test to be used with options.js
   chrome.storage.sync.set({color: '#3aa757'}, function() {
     console.log("The color is green.");
