@@ -1,3 +1,4 @@
+/* stylesheet for options.html */
 #changeColor {
     height: 30px;
     width: 30px;
@@ -9,4 +10,31 @@
     width: 30px;
     outline: none;
     margin: 10px;
+}
+/* end of stylesheet for options.html*/
+
+/* popup.html */
+body { 
+    width: 250px;
+    height:75px;
+    background-color:ghostwhite;
+    color: black;
+}
+
+p {
+    text-align: center;
+    padding: 5px;
+}
+
+.zero { 
+    font-size:20px;
+    text-align: center;
+    padding: 5px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.one {
+    text-align: center;
+    padding: 5px;
+    font-family: "Courier New", Courier, monospace;
 }
