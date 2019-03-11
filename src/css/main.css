@@ -38,3 +38,14 @@ p {
     padding: 5px;
     font-family: "Courier New", Courier, monospace;
 }
+
+input {
+    text-align: center;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-block;
+    border: none;
+    font-size: 12px;
+}
