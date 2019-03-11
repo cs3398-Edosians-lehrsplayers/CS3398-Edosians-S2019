@@ -7,15 +7,28 @@
     </head>
 
     <body> 
+
     <p class="zero"><label for="topic">Micro Learning Extension</label></p>
-        <p class="one"><select> id="topic" name="topic"</p>
-           <option value="choose">Please choose a topic to learn</option>
-           <option value="Art">Art</option>
+      <form name = "subjects">
+        <p class="one"><select name="topic" id="topic"></p>
+
+           <option value="nothing" selected="selected">Please choose a topic to learn</option>
+           <option value="http://www.google.com/">Art</option>
            <option value="Music">Music</option>
            <option value="BigFoot">Big Foot</option>
-        </select><br>
-        
-        <p><input id="Submit" type="Submit" value="Submit"/> </p>
+        </select>
+      </form>
+      
+      <script type="text/javascript">
+        var urlMenu = document.getElementById('topic');
+        urlMenu.onchange =function(){
+          var UserOp = this.options[this.selectIndex];
+          if(userOp.value != "nothing")
+          {
+            window.open(userOp.value);
+          }
+        }
+      </script>  
         
         <script src="popup.js"></script>
     </body>
