@@ -4,7 +4,7 @@ Jaysen has implemented the dropdown box in the popup.html file, his next step wi
 
 Ozy has
 
-Warren has
+Warren has implemented the Chinese character checker in the context menu. His next step will be to add a user log to keep track of queries made by the user, and to add information on common character compounds made from characters from past queries.
 
 Spencer has implemented the random fact generator and link tracer. His next step will be to improve the grahpical implementation of the generator as well as design a user feedback tool to improve the suggested facts/articles.
 
