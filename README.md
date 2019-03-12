@@ -2,7 +2,7 @@ Status and next steps of each member:
 
 Jaysen has implemented the dropdown box in the popup.html file, his next step will be to implement further logic with the drop down menu feature. He will add links to each button which will take user to desired topic articles. 
 
-Ozy has
+Ozy has introduced a user interface that includes the extension popup and options page, as well as a custom extension icon.
 
 Warren has implemented the Chinese character checker in the context menu. His next step will be to add a user log to keep track of queries made by the user, and to add information on common character compounds made from characters from past queries.
 
