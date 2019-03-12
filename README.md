@@ -9,11 +9,11 @@ As regular chrome users as well as students, our team has many things we either 
 Our goal is to have the Learning Extension available for download on the Chrome Web Store. The extension will then prompt the user to enter some basic information about topics they are interested in learning more about, and every time you use your browser from that point forward you will be given suggestions for relevent information pertaining to your topics. Over time the results will be more refined as the extension gains a better grasp on what suggestions you like more or like less.
 
 Step 1: Clone and Download directory.
+
 Step 2: 
-
-1.Open the Extension Management page by navigating to chrome://extensions.
+(2.1)Open the Extension Management page by navigating to chrome://extensions.
 The Extension Management page can also be opened by clicking on the Chrome menu, hovering over More Tools then selecting Extensions.
-2.Enable Developer Mode by clicking the toggle switch next to Developer mode.
-3.Click the LOAD UNPACKED button and select the extension directory.
+(2.2)Enable Developer Mode by clicking the toggle switch next to Developer mode.
+(2.3)Click the LOAD UNPACKED button and select the extension directory.
 
-Code compiles, box is presented when selecting extension. Click on box to make box appear blue.
+Code compiles, drop down box is presented when selecting extension. Search box will also appear. There is no logic behind these features.
