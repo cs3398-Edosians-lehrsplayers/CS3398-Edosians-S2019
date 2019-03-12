@@ -17,3 +17,18 @@ The Extension Management page can also be opened by clicking on the Chrome menu,
 (2.3)Click the LOAD UNPACKED button and select the extension directory.
 
 Code compiles, drop down box is presented when selecting extension. Search box will also appear. There is no logic behind these features.
+
+
+
+
+Status and next steps of each member: 
+
+Jaysen has implemented the dropdown box in the popup.html file, his next step will be to implement further logic with the drop down menu feature. He will add links to each button which will take user to desired topic articles. 
+
+Ozy has
+
+Warren has
+
+Spencer has 
+
+John has 
