@@ -29,6 +29,6 @@ Ozy has
 
 Warren has
 
-Spencer has 
+Spencer has implemented the random fact generator and link tracer. His next step will be to improve the grahpical implementation of the generator as well as design a user feedback tool to improve the suggested facts/articles.
 
 John has 
