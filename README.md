@@ -27,6 +27,6 @@ Status and next steps of each member:
 
 **Warren** has implemented the Chinese character checker in the context menu. His next step will be to add a user log to keep track of queries made by the user, and to add information on common character compounds made from characters from past queries.
 
-**Spencer** has implemented the random fact generator and link tracer. His next step will be to improve the grahpical implementation of the generator as well as design a user feedback tool to improve the suggested facts/articles.
+**Spencer** has implemented the random fact generator and link tracer (https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/blob/master/src/js/backgroundContextMenus.js). His next step will be to improve the grahpical implementation of the generator as well as design a user feedback tool to improve the suggested facts/articles.
 
 **John** has produced a large list of websites we want to use as our sources, as well as stored them in code. He has also implimented a random website generator from those sources in the context menu. The next step is to add this to the popup menu and look for ways to retrieve random articles from those websites: https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/blob/master/src/js/backgroundContextMenus.js This link shows the websites added to code as well as the random implimentation of them.
