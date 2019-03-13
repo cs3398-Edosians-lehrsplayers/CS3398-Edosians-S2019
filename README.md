@@ -21,7 +21,7 @@ Code compiles, drop down box is presented when selecting extension. Search box w
 # Team Contributions
 Status and next steps of each member: 
 
-**Jaysen** has implemented the dropdown box in the popup.html file, his next step will be to implement further logic with the drop down menu feature. He will add links to each button which will take user to desired topic articles. 
+**Jaysen** has implemented the dropdown box in the popup.html file,(https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/commit/edec4440db3d990acaaadd26fb23c71b21a427e3) his next step will be to implement further logic with the drop down menu feature. He will add links to each button which will take user to desired topic articles. 
 
 **Ozy** has introduced a user interface that includes the extension popup and options page, as well as a custom extension icon. He plans on further customizing the user interface, specifically the popup and options page, and working with the rest of the team to have a seemless integration between the front and backend. Here is the user interface that will be expanded: https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/blob/master/popup.html
 
