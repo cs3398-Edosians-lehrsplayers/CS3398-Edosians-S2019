@@ -4,51 +4,6 @@ var CONTEXT_MENU_ITEMS = [
     'WE IN BUSINESS, BOIS'
 ];
 
-var links = [
-	"wikipedia.org/",
-	"stackoverflow.com/",
-	"gizmodo.com/",
-	"geeksforgeeks.org/",
-	"nytimes.com/",
-	"theguardian.com/",
-	"narratively.com/",
-	"wired.com/",
-	"grantland.com/",
-	"bloomberg.com/",
-	"nymag.com/",
-	"laphamsquarterly.org/",
-	"theatlantic.com/",
-	"macrumors.com/",
-	"digitaltrends.com/",
-	"pbs.org/",
-	"nationalpost.com/",
-	"businessinsider.com/",
-	"motherjones.com/",
-	"hthenextweb.com/",
-	"espn.com/",
-	"venturebeat.com/",
-	"nybooks.com/",
-	"theringer.com/",
-	"techradar.com/",
-	"smithsonianmag.com/",
-	"theamericanscholar.org/",
-	"firstpost.com/",
-	"arktimes.com/",
-	"eater.com/",
-	"mashable.com/",
-	"beltmag.com/",
-	"engadget.com/",
-	"synacor.com/",
-	"thecut.com/",
-	"droid-life.com/",
-	"newyorker.com/",
-	"slashgear.com/",
-	"gq.com/",
-	"atlantamagazine.com/",
-	"medium.com/",
-	"techcrunch.com/",
-	"theverge.com/"]
-
   var facts = [
     "Animals that lay eggs don't have belly buttons.  ",
     "Beavers can hold their breath for 45 minutes under water.  ",
@@ -123,14 +78,6 @@ chrome.runtime.onInstalled.addListener(function() {
 
 	});
 
-
-	chrome.contextMenus.create({
-		"id": "Random Site",
-		"title": "Click for random site!",
-		"contexts": ["all"],
-		"onclick": openSite
-	});
-
     chrome.contextMenus.create({
         "id": "Random Fact",
         "title": facts[Math.floor(Math.random()*facts.length)],
@@ -163,15 +110,6 @@ function googleIt(e) {
   var newURL = "http://www.google.com/search?q=" + e.selectionText;
   chrome.tabs.create({ url: newURL });
 }
-
-var openSite = function () {
-	var randIdx = Math.random() * links.length;
-	randIdx = parseInt(randIdx, 10);
-	var link = 'http://' + links[randIdx];
-	var win = window.open(link, '_blank');
-	win.focus();
-
-};
 
 // Checks selected text for kanji. If found, prints character and grade to console.
 function checkForKanji(e) {

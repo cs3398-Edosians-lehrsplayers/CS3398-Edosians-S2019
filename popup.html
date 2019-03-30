@@ -6,32 +6,33 @@
         <link rel="stylesheet" type="text/css" href="src/css/main.css">
     </head>
 
-    <body> 
- 
+    <body>
+        <!--trying to get random site button to work-->
+        <p><button id="randomsite">Click for random site!</button></p>
+        <script src="randomSiteTestScript.js"></script>
 
-    <p class="zero"><label for="topic">Micro Learning Extension</label></p>
-    <input type="text" placeholder="Search..">
-      <form name = "subjects">
-        <p class="one"><select name="topic" id="topic"></p>
+        <p class="zero"><label for="topic">Micro Learning Extension</label></p>
+        <input type="text" placeholder="Search..">
+        <form name="subjects">
+            <p class="one"><select name="topic" id="topic"></p>
 
-           <option value="nothing" selected="selected">Please choose a topic to learn</option>
-           <option value="http://www.google.com/">Art</option>
-           <option value="Music">Music</option>
-           <option value="BigFoot">Big Foot</option>
-        </select>
-      </form>
-      
-      <script type="text/javascript">
-        var urlMenu = document.getElementById('topic');
-        urlMenu.onchange =function(){
-          var UserOp = this.options[this.selectIndex];
-          if(userOp.value != "nothing")
-          {
-            window.open(userOp.value);
-          }
-        }
-      </script>  
-        
+            <option value="nothing" selected="selected">Please choose a topic to learn</option>
+            <option value="http://www.google.com/">Art</option>
+            <option value="Music">Music</option>
+            <option value="BigFoot">Big Foot</option>
+            </select>
+        </form>
+
+        <script type="text/javascript">
+            var urlMenu = document.getElementById('topic');
+            urlMenu.onchange = function () {
+                var UserOp = this.options[this.selectIndex];
+                if (userOp.value != "nothing") {
+                    window.open(userOp.value);
+                }
+            }
+        </script>
+
         <script src="popup.js"></script>
     </body>
 </html>
