@@ -45,7 +45,6 @@ var links = [
 
 
 document.getElementById("randomsite").addEventListener("click", openSite);
-
 function openSite() {
 	var randIdx = Math.random() * links.length;
 	randIdx = parseInt(randIdx, 10);
