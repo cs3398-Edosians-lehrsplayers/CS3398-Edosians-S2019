@@ -25,16 +25,5 @@
    function cancelAlarm() {
      chrome.alarms.clear(alarmName);
    }
-   function doToggleAlarm() {
-     checkAlarm( function(hasAlarm) {
-       if (hasAlarm) {
-         cancelAlarm();
-       } else {
-         createAlarm();
-       }
-       checkAlarm();
-     });
-   }
-  $$('#toggleAlarm').addEventListener('click', doToggleAlarm);
-  checkAlarm();
+  
 })();
