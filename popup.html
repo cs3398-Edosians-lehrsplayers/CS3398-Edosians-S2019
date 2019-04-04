@@ -23,16 +23,15 @@
             </select>
         </form>
 
-        <script type="text/javascript">
-            var urlMenu = document.getElementById('topic');
-            urlMenu.onchange = function () {
-                var UserOp = this.options[this.selectIndex];
-                if (userOp.value != "nothing") {
-                    window.open(userOp.value);
-                }
-            }
-        </script>
+      
 
         <script src="popup.js"></script>
+
+        <footer id="info">
+            <button id="toggleAlarm">Activate alarm</button>
+        </footer>
+        <script src="js/alarms.js"></script>
+
     </body>
 </html>
+

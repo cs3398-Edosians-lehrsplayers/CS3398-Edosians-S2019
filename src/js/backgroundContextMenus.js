@@ -95,6 +95,8 @@ chrome.runtime.onInstalled.addListener(function() {
   });
 
 
+
+
   // test to be used with options.js
   chrome.storage.sync.set({color: '#3aa757'}, function() {
     console.log("The color is green.");
