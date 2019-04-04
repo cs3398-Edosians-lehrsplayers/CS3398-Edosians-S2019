@@ -130,5 +130,13 @@ function storeCategory2() {
 
 document.getElementById("randomfact").addEventListener("click", openFact);
 function openFact() {
-	alert(facts[Math.floor(Math.random()*facts.length)]);
+	var rand = Math.floor(Math.random()*facts.length);
+	if (confirm(facts[rand] + "\n\nPress OK to google fact or Cancel to close window!"))
+	{
+		var newURL = "http://www.google.com/search?q=" + facts[rand];
+  		chrome.tabs.create({ url: newURL });
+	}
+
+
+	//alert(facts[Math.floor(Math.random()*facts.length)]);
 }
