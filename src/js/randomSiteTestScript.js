@@ -100,11 +100,8 @@ var links = [
   ];
 
 
-var upvotes = 0;
-var downvotes = 0;
 
 var randomSiteArray = [];
-
 
 
 document.getElementById("randomsite").addEventListener("click", openSite);
@@ -125,13 +122,4 @@ function openFact() {
 		var newURL = "http://www.google.com/search?q=" + facts[rand];
   		chrome.tabs.create({ url: newURL });
 	}
-
-	if(confirm("Did you enjoy learning this new random fact?\n\nPress OK to upvote or Cancel to downvote"))
-	{
-		upvotes++;
-	}
-	else downvotes++;
-
-
-
 }
