@@ -99,8 +99,11 @@ var links = [
     "The average human produces 10,000 gallons of saliva in a lifetime. "
   ];
 
-var categories = [];
-var i = 0;
+
+var upvotes = 0;
+var downvotes = 0;
+
+var randomSiteArray = [];
 
 
 
@@ -114,20 +117,6 @@ function openSite() {
 };
 
 
-document.getElementById("category1").addEventListener("click", storeCategory1);
-function storeCategory1() {
-	categories[i] = "Category1";
-	alert(categories[i]);
-	i++;
-}
-
-document.getElementById("category2").addEventListener("click", storeCategory2);
-function storeCategory2() {
-	categories[i] = "Category2";
-	alert(categories[i]);
-	i++;
-}
-
 document.getElementById("randomfact").addEventListener("click", openFact);
 function openFact() {
 	var rand = Math.floor(Math.random()*facts.length);
@@ -137,6 +126,12 @@ function openFact() {
   		chrome.tabs.create({ url: newURL });
 	}
 
+	if(confirm("Did you enjoy learning this new random fact?\n\nPress OK to upvote or Cancel to downvote"))
+	{
+		upvotes++;
+	}
+	else downvotes++;
 
-	//alert(facts[Math.floor(Math.random()*facts.length)]);
+
+
 }
