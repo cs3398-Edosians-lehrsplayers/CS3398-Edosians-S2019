@@ -43,10 +43,7 @@ var links = [
 	"techcrunch.com/",
 	"theverge.com/"];
 
-var categories = [];
-var i = 0;
-
-
+var randomSiteArray = [];
 
 document.getElementById("randomsite").addEventListener("click", openSite);
 function openSite() {
@@ -56,18 +53,3 @@ function openSite() {
 	var win = window.open(link, '_blank');
 	win.focus();
 };
-
-
-document.getElementById("category1").addEventListener("click", storeCategory1);
-function storeCategory1() {
-	categories[i] = "Category1";
-	alert(categories[i]);
-	i++;
-}
-
-document.getElementById("category2").addEventListener("click", storeCategory2);
-function storeCategory2() {
-	categories[i] = "Category2";
-	alert(categories[i]);
-	i++;
-}
