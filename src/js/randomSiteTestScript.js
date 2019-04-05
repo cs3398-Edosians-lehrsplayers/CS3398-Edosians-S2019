@@ -121,8 +121,5 @@ function openFact() {
 		var newURL = "http://www.google.com/search?q=" + facts[rand];
   		chrome.tabs.create({ url: newURL });
 	}
-
-
 	//alert(facts[Math.floor(Math.random()*facts.length)]);
 }
-
