@@ -99,7 +99,8 @@ var links = [
     "The average human produces 10,000 gallons of saliva in a lifetime. "
   ];
 
-
+var upvotes = 0;
+var downvotes = 0;
 
 var randomSiteArray = [];
 
@@ -122,4 +123,9 @@ function openFact() {
 		var newURL = "http://www.google.com/search?q=" + facts[rand];
   		chrome.tabs.create({ url: newURL });
 	}
+    if(confirm("Did you enjoy learning this new random fact?\n\nPress OK to upvote or Cancel to downvote"))
+    {
+        upvotes++;
+    }
+    else downvotes++;
 }
