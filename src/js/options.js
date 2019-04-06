@@ -1,7 +1,7 @@
 // The options page will be used to change extension settings, for example, the
 // user may be able to filter certain pages from results (assuming we allow that).
 
-'use strict';
+/*'use strict';
 
 let page = document.getElementById('buttonDiv');
 const kButtonColors = ['#3aa757', '#e8453c', '#f9bb2d', '#4688f1'];
@@ -18,4 +18,4 @@ function constructOptions(kButtonColors) {
     page.appendChild(button);
   }
 }
-constructOptions(kButtonColors);
+constructOptions(kButtonColors); */
