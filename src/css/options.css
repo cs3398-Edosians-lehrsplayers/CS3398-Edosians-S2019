@@ -1,0 +1,34 @@
+/* stylesheet for options.html */
+
+body {
+    text-align: center;
+    background-image: url('/src/images/brainDesign2.jpg');
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+/* Ids */
+#changeColor {
+    height: 30px;
+    width: 30px;
+    outline: none;
+}
+
+#bttnOptions {
+    height: 30px;
+    width: 30px;
+    outline: none;
+    margin: 10px;
+}
+/* end of stylesheet for options.html*/

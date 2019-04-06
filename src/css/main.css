@@ -1,20 +1,3 @@
-/* stylesheet for options.html */
-
-/* Ids */
-#changeColor {
-    height: 30px;
-    width: 30px;
-    outline: none;
-}
-
-#bttnOptions {
-    height: 30px;
-    width: 30px;
-    outline: none;
-    margin: 10px;
-}
-/* end of stylesheet for options.html*/
-
 /* popup.html */
 html, body {
     height: 300px;
@@ -22,9 +5,11 @@ html, body {
 }
 
 body { 
+    background-image: url('/src/images/brainDesign1.png');
     width: 250px;
     height:75px;
     color: black;
+    
 }
 
 p {
@@ -33,7 +18,7 @@ p {
 }
 
 /* Classes Begin */
-.zero { 
+.pulse { 
     font-size:30px;
     text-emphasis: bold;
     text-align: center;
