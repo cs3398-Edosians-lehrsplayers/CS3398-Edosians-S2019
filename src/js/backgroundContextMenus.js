@@ -54,16 +54,21 @@ function checkForKanji(e) {
     kanjiData = undefined;
     for(i = 0; i < str.length; i++) {
         if(str.charCodeAt(i) >= 0x4E00 && str.charCodeAt(i) <= 0x9FAF) {
-            kanjiActive = true;
-            $.ajax({
-                url: "https://kanjialive-api.p.mashape.com/api/public/kanji/" + str.charAt(i),
-                dataType: "JSON",
-                headers: {
-                    "X-RapidAPI-Key": "06dd6c2851msh7d0e21955b66957p16986cjsn4b054ebb5f8c"
-                }
-            }).done(function(data) {
-                kanjiData = data;
-            });            
+            onKanjiFound(str.charAt(i));
         }
     }
+}
+
+// Searches for the target kan
+function onKanjiFound(kanji) {
+    kanjiActive = true;
+    $.ajax({
+        url: "https://kanjialive-api.p.mashape.com/api/public/kanji/" + kanji,
+        dataType: "JSON",
+        headers: {
+            "X-RapidAPI-Key": "06dd6c2851msh7d0e21955b66957p16986cjsn4b054ebb5f8c"
+        }
+    }).done(function(data) {
+        kanjiData = data;
+    });  
 }
