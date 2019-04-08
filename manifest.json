@@ -6,7 +6,7 @@
     "scripts": ["util/jquery-3.3.1.min.js", "src/js/backgroundContextMenus.js"],
     "persistent": true
   },
-  "permissions": ["activeTab","declarativeContent", "contextMenus", "storage", "alarms"],
+  "permissions": ["activeTab","declarativeContent", "contextMenus", "storage", "notifications"],
 
   "browser_action": {
     "name": "Micro Learning Extension",
