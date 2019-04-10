@@ -21,7 +21,9 @@ Code compiles, drop down box is presented when selecting extension. Search box w
 # Team Contributions
 Status and next steps of each member: 
 
-**Jaysen** has implemented a console alarm which sends an alert to the console to test that a button has been toggled , file alarm.js was removed from remote until database is implemented.(https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/commit/4cb6fd84ede78e2806ea8f4b3c63548139220d81). He also implemented a random array of links corresponding to the default catergories in the drop down menu(https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/commit/865a8af4007363e60462096b53f2e726a2c80c81). He plans to implement user specific interests to be added in the drop down menu as well as removing catergories.  
+**Jaysen** has implemented a console alarm which sends an alert to the console to test that a button has been toggled , file alarm.js was removed from remote until database is implemented.(https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/commit/4cb6fd84ede78e2806ea8f4b3c63548139220d81).
+He also implemented a random array of links corresponding to the default catergories in the drop down menu,(https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/commit/865a8af4007363e60462096b53f2e726a2c80c81).
+He plans to implement user specific interests to be added in the drop down menu as well as removing catergories.  
 
 **Ozy** has introduced a user interface that includes the extension popup and options page, as well as a custom extension icon. He plans on further customizing the user interface, specifically the popup and options page, and working with the rest of the team to have a seemless integration between the front and backend. Here is the user interface that will be expanded: https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/blob/master/popup.html
 
