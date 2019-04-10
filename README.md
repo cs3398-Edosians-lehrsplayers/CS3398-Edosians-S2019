@@ -1,3 +1,4 @@
+^hello fellow edosians
 # Google Chrome Learning Extension ![Brain!](src/images/ml_brain128.png)
 
 
@@ -37,4 +38,4 @@ He plans to implement user specific interests to be added in the drop down menu 
 
 **What Might Be Impeding Us from Performing Better?** - 
 
-**What Can We do to Improve?** - 
+**What Can We do to Improve?** - John - 
