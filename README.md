@@ -26,7 +26,7 @@ Status and next steps of each member:
 He also implemented a random array of links corresponding to the default catergories in the drop down menu,(https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/commit/865a8af4007363e60462096b53f2e726a2c80c81).
 He plans to implement user specific interests to be added in the drop down menu as well as removing catergories.  
 
-**Ozy** has introduced a user interface that includes the extension popup and options page, as well as a custom extension icon. He plans on further customizing the user interface, specifically the popup and options page, and working with the rest of the team to have a seemless integration between the front and backend. Here is the user interface that will be expanded: https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/blob/master/popup.html
+**Ozy** has further customized the user interface and added a background image and style to buttons on the popup as well as experiment with the UI for the options page: https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/blob/master/src/css/main.css. His next step is to add basic functionality and style to the options page while working with the team to implement a database that will make the design more robust. https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/blob/master/src/css/options.css & https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/blob/master/src/js/options.js.
 
 **Warren** has implemented the Chinese character checker in the context menu. His next step will be to add a user log to keep track of queries made by the user, and to add information on common character compounds made from characters from past queries.
 
