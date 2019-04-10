@@ -33,8 +33,8 @@ He plans to implement user specific interests to be added in the drop down menu 
 
 **John** has implimented a random website feature into the popup menu, as well as researched how to store things on the user's local machine. The next step is to be able to retrieve random articles from the websites that are in our code, as well as actually storing user interests/saved things on the user's machine. https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/blob/master/src/js/randomSiteTestScript.js
 
-**What went well?** - 
+**What went well?** - John - I think despite the short amount of time we had for this sprint, we got a lot of work done. It seems like the team got more work done in this short sprint than we did in the first one, and that we are all catching on to the environment that we're using pretty quickly.
 
 **What Might Be Impeding Us from Performing Better?** - 
 
-**WhatCanWedotoImprove?** - 
+**What Can We do to Improve?** - 
