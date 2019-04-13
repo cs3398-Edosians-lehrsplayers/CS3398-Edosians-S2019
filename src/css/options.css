@@ -1,34 +1,123 @@
-/* stylesheet for options.html */
-
+/**** stylesheet for options.html ****/
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('/src/images/brainDesign1.png');
+    color: black;
+    box-sizing: border-box;
+}
+/*
 body {
-    text-align: center;
-    background-image: url('/src/images/brainDesign2.jpg');
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 75%;
 }
 
-h1 {
-    text-align: center;
+div {
+    display: block;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+/** Id definitions begin **/
+#main-content {
+    height: 100%;
+    position: relative;
+}
+ /* wrapper for options box content */
+#wrapper {
+    padding-top: 20px;
+}
+
+#top-page {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 50px;
-    font-weight: bold;
-    color: white;
-}
-
-p {
-    color: white;
+    font-weight: 500;
+    margin-top: 50px;
     text-align: center;
 }
-
-/* Ids */
-#changeColor {
-    height: 30px;
-    width: 30px;
-    outline: none;
+/* options box style begins */
+#options-content-box {
+    width: 65%;
+    margin: auto;
 }
 
-#bttnOptions {
-    height: 30px;
-    width: 30px;
-    outline: none;
-    margin: 10px;
+#options-selector-toggler::after {
+    content: '';
+    display: block;
+    clear: both;
 }
-/* end of stylesheet for options.html*/
+
+#options-selector-toggler {
+    width: 100%;
+    background-color: silver;
+    border: 1px solid red;
+    min-height: 600px;
+    height: auto;
+}
+
+#options-selector-toggler > div {
+    float: left;
+    height: 400px;
+}
+
+#options-selector-left {
+    width: 220px;
+    padding: 12px 0 0 0;
+}
+
+#options-list {}
+
+#options-selector-right {
+    width: calc(100% - 220px);
+    background-color: white;
+    padding: 10px 10px 5px 10px;
+    position: relative;
+
+}
+
+
+
+/* options box style ends */
+/** IDs definitions end **/
+
+/* class definitions begin */
+.list-style {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li.option-name-list {
+    height: 40px;
+    text-transform: capitalize;
+    font-weight: 100;
+    text-indent: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 7px 0px;
+}
+
+li.option-name-list.li-active {
+    background-color: white;
+}
+
+li.option-name-list > a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.content-box.content-box-active {
+    display: block;
+}
+
+/* class definitions end */
+
+/**** end of stylesheet for options.html ****/

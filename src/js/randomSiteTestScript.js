@@ -1,5 +1,8 @@
 var links = [
 	"wikipedia.org/",
+	"leetcode.com/",
+	"udemy.com/",
+	"geeksforgeeks.org/",
 	"stackoverflow.com/",
 	"gizmodo.com/",
 	"geeksforgeeks.org/",
