@@ -41,7 +41,10 @@ li {
     font-size: 50px;
     font-weight: 500;
     margin-top: 50px;
+    margin-left: 215px;
+    margin-right: 215px;
     text-align: center;
+    background-color: darkgray;
 }
 /* options box style begins */
 #options-content-box {
@@ -59,7 +62,7 @@ li {
     width: 100%;
     background-color: silver;
     border: 1px solid red;
-    min-height: 600px;
+    min-height: 400px;
     height: auto;
 }
 
