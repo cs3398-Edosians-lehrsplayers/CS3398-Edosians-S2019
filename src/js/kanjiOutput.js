@@ -17,6 +17,15 @@ if (kanjiData !== undefined && kanjiData.kanji !== undefined) {
     document.getElementById("kanjivideooutput").appendChild(videoButton);
     document.getElementById("kanjivideooutput").appendChild(videoElement);
     
+} else if(kanjiData !== undefined && kanjiData.data !== undefined) {
+    displayVideo = false;
+    if(kanjiData.data[0] === undefined)
+        document.getElementById("kanjidetails").appendChild(createHeaderFromText("Compound not recognized"));
+    else {
+        var header = kanjiData.data[0].slug;
+        document.getElementById("kanjidetails").appendChild(createHeaderFromText(header));
+        document.getElementById("kanjidetails").appendChild(createCompoundDescription());
+    }
 }
 
 // Creates the button which hides the video of how the kanji is written.
@@ -49,9 +58,21 @@ function onVideoButtonClicked() {
     videoElement.height = displayVideo ? 160 : 0;
 }
 
+function createHeaderFromText(headerText) {
+    var lmnt = document.createElement("h1");
+    lmnt.textContent = headerText;
+    return lmnt;
+}
+
 function createHeader() {
     var lmnt = document.createElement("h1");
     lmnt.textContent = kanjiData.kanji.character;
+    return lmnt;
+}
+
+function createCompoundDescription() {
+    var lmnt = document.createElement("h3");
+    lmnt.textContent = kanjiData.data[0].senses[0].english_definitions;
     return lmnt;
 }
 

@@ -50,16 +50,55 @@ function googleIt(e) {
 // Checks selected text for kanji. If found, prints character and grade to console.
 function checkForKanji(e) {
     var str = e.selectionText;
+    if(str.length > 10) {
+        kanjiData = {
+            error: "length"
+        };
+        kanjiActive = false;
+        console.log("Input too large. Limit: 10");
+        return;
+    }
+    
+    var kanjiStr = "";
+    var kanjiFound = false;
     var i;
     kanjiData = undefined;
     for(i = 0; i < str.length; i++) {
-        if(str.charCodeAt(i) >= 0x4E00 && str.charCodeAt(i) <= 0x9FAF) {
-            onKanjiFound(str.charAt(i));
+        if(kanjiFound) {
+            if(isKanji(str.charAt(i))) {
+                kanjiStr += str.charAt(i);
+            } else {
+                break;
+            }
+        } else {
+            if(isKanji(str.charAt(i))) {
+                kanjiFound = true;
+                kanjiStr += str.charAt(i);
+            }
         }
+    }
+    
+    if(kanjiFound) {
+        console.log(kanjiStr);
+        onKanjiCompoundFound(kanjiStr);
+        kanjiActive = true;
+    } else {
+        console.log("Kanji not found");
+        kanjiActive = false;
     }
 }
 
-// Searches for the target kan
+function onKanjiCompoundFound(compound) {
+    kanjiActive = true;
+    $.ajax({
+        url: "https://jisho.org/api/v1/search/words?keyword=" + compound,
+        dataType: "JSON"
+    }).done(function(data) {
+        kanjiData = data;
+    }); 
+}
+
+// Searches for the target kanji
 function onKanjiFound(kanji) {
     kanjiActive = true;
     $.ajax({
@@ -71,4 +110,9 @@ function onKanjiFound(kanji) {
     }).done(function(data) {
         kanjiData = data;
     });  
+}
+
+function isKanji(c) {
+    var code = c.charCodeAt(0);
+    return (code >= 0x4E00 && code <= 0x9FAF);
 }
