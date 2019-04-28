@@ -68,3 +68,19 @@ function myFunction() {
 
   
 }
+
+/*** Notifications Begin ***/
+var options = {
+  type: "basic",
+  title: "Micro Learning Extension",
+  message: "Don't forget to do some learning today!",
+  iconUrl: "/src/images/icon_website-48.png"
+};
+
+chrome.notifications.create(options, callBack);
+
+function callBack() {
+	console.log("Notification done!");
+}
+
+/*** Notifications End ***/

@@ -41,8 +41,8 @@ li {
     font-size: 50px;
     font-weight: 500;
     margin-top: 50px;
-    margin-left: 205px;
-    margin-right: 205px;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
     text-align: center;
     background-color: darkgray;
 }
@@ -76,7 +76,7 @@ li {
     padding: 12px 0 0 0;
 }
 
-#options-list {}
+/*#options-list {}*/
 
 #options-selector-right {
     width: calc(100% - 220px);
