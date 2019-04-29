@@ -83,4 +83,22 @@ function callBack() {
 	console.log("Notification done!");
 }
 
-/*** Notifications End ***/
+/*** Trending Topics ***/
+
+
+
+var url = 'https://newsapi.org/v2/top-headlines?' +
+          'country=us&' +
+          'apiKey=b602eea8e18f4f338b954407b123c521';
+var req = new Request(url);
+/*fetch(req)
+    .then(function(response) {
+        console.log(response.json());
+    })
+**/
+
+
+///API = key b602eea8e18f4f338b954407b123c521
+
+
+
