@@ -20,7 +20,7 @@ The Extension Management page can also be opened by clicking on the Chrome menu,
 Code compiles, drop down box is presented when selecting extension. Search box will also appear. There is no logic behind these features.
 
 # Team Contributions
-Status and next steps of each member: 
+Sprint 3 accomplishments: 
 
 **Jaysen** has implemented a console alarm which sends an alert to the console to test that a button has been toggled , file alarm.js was removed from remote until database is implemented.(https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/commit/4cb6fd84ede78e2806ea8f4b3c63548139220d81).
 He also implemented a random array of links corresponding to the default catergories in the drop down menu,(https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/commit/865a8af4007363e60462096b53f2e726a2c80c81).
@@ -32,4 +32,4 @@ He plans to implement user specific interests to be added in the drop down menu 
 
 **Spencer** has implemented the random fact generator and link tracer, as well as a user feedback feature to record user interest. (https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/blob/master/src/js/randomSiteTestScript.js). His next step will be to research and implement the backend database with the team to save user info and implement a recommender system in order to refine suggested user content.
 
-**John** has implimented a random website feature into the popup menu, as well as researched how to store things on the user's local machine. The next step is to be able to retrieve random articles from the websites that are in our code, as well as actually storing user interests/saved things on the user's machine. https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/blob/master/src/js/randomSiteTestScript.js
+**John** has attempted to impliment Google Chrome local storage for our application. This is a work in progress and is currently unfinished, but this is a good way to store user information such as interests, saved articles, etc. Doing this will also allow us to begin creating an algorithm that can give content based on the users interests and browsing habits. Artifact: https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/blob/master/src/js/randomSiteTestScript.js The local storage section in this code is a test to see exactly how it works and logs information. There are also links at the top that I have been referencing to understand some of these things.
