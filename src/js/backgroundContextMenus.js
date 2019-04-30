@@ -4,7 +4,8 @@ var CONTEXT_MENU_ITEMS = [
     'WE IN BUSINESS, BOIS'
 ];
 
-var kanjiData;
+var kanjiData = [];
+var compoundData = {};
 
 chrome.runtime.onInstalled.addListener(function() {
 
@@ -51,8 +52,11 @@ function googleIt(e) {
 function checkForKanji(e) {
     var str = e.selectionText;
     if(str.length > 10) {
-        kanjiData = {
+        kanjiData = [{
             error: "length"
+        }];
+        compoundData = {
+            error: "length"  
         };
         kanjiActive = false;
         console.log("Input too large. Limit: 10");
@@ -61,8 +65,8 @@ function checkForKanji(e) {
     
     var kanjiStr = "";
     var kanjiFound = false;
+    kanjiData = [];
     var i;
-    kanjiData = undefined;
     for(i = 0; i < str.length; i++) {
         if(kanjiFound) {
             if(isKanji(str.charAt(i))) {
@@ -81,6 +85,9 @@ function checkForKanji(e) {
     if(kanjiFound) {
         console.log(kanjiStr);
         onKanjiCompoundFound(kanjiStr);
+        for(var i = 0; i < kanjiStr.length; i++) {
+            onKanjiFound(kanjiStr.charAt(i));
+        }
         kanjiActive = true;
     } else {
         console.log("Kanji not found");
@@ -94,7 +101,7 @@ function onKanjiCompoundFound(compound) {
         url: "https://jisho.org/api/v1/search/words?keyword=" + compound,
         dataType: "JSON"
     }).done(function(data) {
-        kanjiData = data;
+        compoundData = data;
     }); 
 }
 
@@ -108,10 +115,11 @@ function onKanjiFound(kanji) {
             "X-RapidAPI-Key": "06dd6c2851msh7d0e21955b66957p16986cjsn4b054ebb5f8c"
         }
     }).done(function(data) {
-        kanjiData = data;
+        kanjiData.push(data);
     });  
 }
 
+// Takes a single character. Returns true if it is a valid kanji character, false otherwise.
 function isKanji(c) {
     var code = c.charCodeAt(0);
     return (code >= 0x4E00 && code <= 0x9FAF);
