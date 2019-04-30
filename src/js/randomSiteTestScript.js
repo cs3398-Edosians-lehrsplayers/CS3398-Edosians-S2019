@@ -1,3 +1,7 @@
+//https://stackoverflow.com/questions/9404813/how-to-view-or-edit-localstorage
+//https://stackoverflow.com/questions/15801798/where-is-google-chrome-local-storage-saved
+//https://developer.chrome.com/apps/storage
+
 var links = [
 	"wikipedia.org/",
 	"leetcode.com/",
@@ -56,3 +60,11 @@ function openSite() {
 	var win = window.open(link, '_blank');
 	win.focus();
 };
+
+chrome.storage.sync.set({key: value}, function() {
+    console.log('Value is set to ' + value);
+});
+
+chrome.storage.sync.get(['key'], function(result) {
+    console.log('Value currently is ' + result.key);
+});
