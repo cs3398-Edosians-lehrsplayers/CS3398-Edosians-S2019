@@ -8,6 +8,8 @@ var links = [
 	"udemy.com/",
 	"geeksforgeeks.org/",
 	"stackoverflow.com/",
+	"mylanguageexchange.com/",
+	"investopedia.com/",
 	"gizmodo.com/",
 	"geeksforgeeks.org/",
 	"nytimes.com/",
