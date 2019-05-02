@@ -22,7 +22,7 @@ Code compiles, drop down box is presented when selecting extension. Search box w
 # Team Contributions
 Sprint 3 accomplishments: 
 
-**Jaysen** has started implementation on grabbing trending topics using an API provided by https://newsapi.org/v2/top-headlines?. The API grabs trending news and will display it on our pop-up window.
+**Jaysen** has started implementation on grabbing trending topics using an API provided by https://newsapi.org/v2/top-headlines?. The API grabs trending news and will display it on our pop-up window.https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/commit/6e906ecd0c7aa069feb02cb834d355ddcf86f288
 
 **Ozy** designed the UI for the options page, including some dummy option buttons for the user (these buttons do not currently do anything, logic needs to be implemented): https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/blob/master/src/css/options.css & https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/blob/master/options.html. He also implemented a very basic notification feature that appears, as a reminder to use our extension to learn, upon clicking the extension icon.https://github.com/cs3398-Edosians-lehrsplayers/CS3398-Edosians-S2019/blob/master/src/js/popup.js
 
